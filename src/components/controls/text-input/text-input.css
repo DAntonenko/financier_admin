@@ -1,0 +1,115 @@
+.text-input__wrapper {
+  position: relative;
+}
+
+.text-input {
+  width: 100%;
+  height: 32px;
+  color: var(--text01);
+  font-weight: var(--bodyShort01Weight);
+  font-size: var(--bodyShort01Size);
+  line-height: var(--bodyShort01Height);
+  letter-spacing: var(--bodyShort01Spacing);
+  border: none;
+  border-bottom: 1px solid var(--interactive02);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.text-input__label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  color: var(--text01);
+  font-weight: var(--label01Weight);
+  font-size: var(--label01Size);
+  line-height: var(--label01Height);
+  letter-spacing: var(--label01Spacing);
+}
+
+.text-input__label-tooltip {
+  margin-left: 8px;
+}
+
+.text-input__icons-wrapper {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  display: flex;
+}
+
+.text-input__icon-add {
+  width: 16px;
+  height: 16px;
+  /* background-image: url("../../../public/finctrl/16x16/icon-navigation-add-16_icon-accent-01.svg"); */
+  cursor: pointer;
+}
+
+.text-input__icon-close {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  /* background-image: url("../../../public/finctrl/16x16/icon-navigation-close-16_icon-03.svg"); */
+  cursor: pointer;
+}
+
+.text-input--error {
+  padding-right: 24px;
+  border-color: var(--support01);
+  background-position: right;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  /* background-image: url("../../../public/finctrl/16x16/icon-status-warning-filled-16_icon-support-01.svg"); */
+}
+
+.text-input--with-icons {
+  padding-right: 48px;
+}
+
+.text-input--with-icons.text-input--error {
+  background-position: bottom 8px right 25px;
+}
+
+.text-input:focus {
+  border-color: var(--focus);
+}
+
+.text-input::placeholder {
+  color: var(--text03);
+}
+
+.text-input__error-message {
+  margin-top: 8px;
+  color: var(--support01);
+  font-weight: var(--caption01Weight);
+  font-size: var(--caption01Size);
+  line-height: var(--caption01Height);
+  letter-spacing: var(--caption01Spacing);
+}
+
+.text-input__help-message {
+  margin-top: 8px;
+  color: var(--text03);
+  font-weight: var(--caption01Weight);
+  font-size: var(--caption01Size);
+  line-height: var(--caption01Height);
+  letter-spacing: var(--caption01Spacing);
+}
+
+.text-input--disabled .text-input {
+  color: var(--text04);
+  border-color: var(--disabled02);
+  cursor: not-allowed;
+}
+
+
+.text-input--disabled .text-input__label {
+  color: var(--text04);
+  cursor: not-allowed;
+}
+
+
+.text-input--disabled .text-input::placeholder {
+  color: var(--text04);
+  cursor: not-allowed;
+}

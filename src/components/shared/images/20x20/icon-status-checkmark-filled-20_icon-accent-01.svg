@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon-status-checkmark-filled-20_icon-accent-01</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,18.75 C5.16750844,18.75 1.25,14.8324916 1.25,10 C1.25,5.16750844 5.16750844,1.25 10,1.25 C14.8324916,1.25 18.75,5.16750844 18.75,10 C18.75,14.8324916 14.8324916,18.75 10,18.75 Z M8.75,13.4375 L14.375,7.8625 L13.38125,6.875 L8.75,11.46875 L6.61875,9.375 L5.625,10.3125 L8.75,13.4375 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-status-checkmark-filled-20_icon-accent-01" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icon-color" fill="#53BA20" xlink:href="#path-1"></use>
+    </g>
+</svg>

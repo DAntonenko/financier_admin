@@ -1,0 +1,59 @@
+@keyframes preloaderAnimation {
+  0%, 80%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.simple-loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: max-content;
+  height: 60px;
+  z-index: 99;
+  text-align: center;
+  margin: auto;
+}
+
+.simple-loader__caption {
+  font-size: var(--productiveHeading02Size);
+  font-weight: var(--productiveHeading02Weight);
+  line-height: var(--productiveHeading02Height);
+  letter-spacing: var(--productiveHeading02Spacing);
+}
+
+.simple-loader__point {
+  display: inline-block;
+  margin-right: var(--spacer16);
+  margin-bottom: var(--spacer16);
+  height: var(--spacer16);
+  width: var(--spacer16);
+  border-radius: 50%;
+  background-color: var(--interactive01);
+  animation: preloaderAnimation 1.4s infinite ease-in-out;
+}
+
+.simple-loader__point:last-child {
+  margin-right: 0;
+}
+
+.simple-loader__point:nth-child(2) {
+  -webkit-animation-delay: 0.16s;
+  animation-delay: 0.16s;
+}
+
+.simple-loader__point:nth-child(3) {
+  -webkit-animation-delay: 0.32s;
+  animation-delay: 0.32s;
+}
+
+.simple-loader__point:nth-child(4) {
+  -webkit-animation-delay: 0.48s;
+  animation-delay: 0.48s;
+}

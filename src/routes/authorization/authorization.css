@@ -1,0 +1,36 @@
+.authorization {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  color: var(--text01);
+  background-color: var(--interactive01);
+}
+
+.authorization__window {
+  width: 450px;
+  height: 408px;
+  padding: 40px;
+  border-radius: 40px;
+  background-color: var(--uiBackgroundWhite);
+}
+
+.authorization__title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.authorization__text-input {
+  margin: 8px 0;
+}
+
+.authorization__checkbox {
+  margin: 16px 0;
+}
+
+.authorization__submit-button {
+  width: 100%;
+  margin-top: 48px;
+}

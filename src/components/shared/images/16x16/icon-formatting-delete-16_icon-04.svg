@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>icon-formatting-delete-16_icon-04</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9,1 C10.3254834,1 11,1.8954305 11,3 L14,3 L14,4 L13,4 L13,13.1538462 C13,14.1734488 12.1859723,15 11.1818182,15 L4.81818182,15 C3.81402773,15 3,14.1734488 3,13.1538462 L3,4 L2,4 L2,3 L5,3 C5,1.8954305 5.6745166,1 7,1 L9,1 Z M12,4 L4,4 L4,13.0909091 C4,13.5929861 4.39796911,14 4.88888889,14 L11.1111111,14 C11.6020309,14 12,13.5929861 12,13.0909091 L12,4 Z M7,6 L7,12 L6,12 L6,6 L7,6 Z M10,6 L10,12 L9,12 L9,6 L10,6 Z M9,2 L7,2 L6.85896556,2.00586786 C6.27459424,2.0562821 6.03484527,2.42579753 6.0035769,2.89103898 L6,3 L10,3 L9.9964231,2.89103898 C9.96515473,2.42579753 9.72540576,2.0562821 9.14103444,2.00586786 L9,2 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-formatting-delete-16_icon-04" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icon-color" fill="#252B39" xlink:href="#path-1"></use>
+    </g>
+</svg>

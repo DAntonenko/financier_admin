@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600&display=swap&subset=cyrillic');
+
+:root {
+  --uiBackgroundGrey: #f6f6f9;
+  --uiBackgroundWhite: #fff;
+
+  --ui01: #e9e9eb;
+  --ui02: #d3d5d7;
+  --ui03: #bdbfc3;
+  --ui04: #a0a1a4;
+  --ui05: #888a8d;
+  --ui06: #252b39;
+
+  --uiMainNav01: #252b39;
+  --uiMainNav02: #2d3445;
+  --uiMainNav03: #252b39;
+  --uiMainNav04: #666a74;
+  --uiMainHeader: #fff;
+
+  --interactive01: #febd2b;
+  --interactive02: #bdbfc3;
+  --interactive03: #febd2b;
+  --interactiveAccent01: #53ba20;
+  --interactiveAccent02: #3887ff;
+
+  --text01: #12151c;
+  --text02: #252b39;
+  --text03: #7c8088;
+  --text04: #bdbfc3;
+  --text05: #fff;
+  --text06: #12151c;
+  --text07: #bdbfc3;
+  --text08: #fff;
+  --textAccent01: #53ba20;
+  --textDisabledAccent01: #a9dc8f;
+  --textAccent02: #3887ff;
+  --textDisabledAccent02: #9dc4ff;
+  --textSupport01: #ff6200;
+  --textDisabledSupport01: #ffc099;
+
+  --icon01: #252b39;
+  --icon02: #fff;
+  --icon03: #7c8088;
+  --icon04: #252b39;
+  --icon05: #bdbfc3;
+  --icon06: #fff;
+  --iconInteractive01: #febd2b;
+  --iconAccent01: #53ba20;
+  --iconAccent02: #3887ff;
+  --iconDisabled01: #bdbfc3;
+  --iconDisabledAccent02: #9dc4ff;
+  --iconSupport01: #ff6200;
+
+  --datavizUi01: #febd2b;
+  --datavizUi01Add01: #fede95;
+  --datavizUi01Add02: #fff5df;
+  --datavizUi02: #888a8d;
+  --datavizUi02Add01: #bdbfc3;
+  --datavizUi02Add02: #e9e9eb;
+  --datavizAccent01: #53ba20;
+  --datavizAccent01Add01: #a9dc8f;
+  --datavizAccent01Add02: #e5f5de;
+  --datavizAccent02: #3887ff;
+  --datavizAccent02Add01: #9dc4ff;
+  --datavizAccent02Add02: #e1edff;
+  --datavizAccent03: #ff5a98;
+  --datavizAccent03Add01: #ff9ac0;
+  --datavizAccent03Add02: #ffe7f0;
+  --datavizSupport01: #ff6200;
+
+  --support01: #ff6200;
+
+  --focus: #febd2b;
+  --hoverPrimary: #eba300;
+  --hoverSecondary: #7c8088;
+  --hoverAccent01: #339a00;
+  --hoverAccent02: #1f70ea;
+  --hoverUi01: rgba(31, 112, 234, 0.05);
+  --activePrimary: #e69000;
+  --activeSecondary: #7c8088;
+  --activeAccent01: #53ba20;
+  --activeAccent02: #3887ff;
+
+  --disabled01: #fede95;
+  --disabled02: #d3d5d7;
+  --disabled03: #bdbfc3;
+  --disabledAccent01: #a9dc8f;
+  --disabledAccent02: #9dc4ff;
+  --disabledSupport01: #ffc099;
+
+  --highlightUi01: #fff5df;
+  --highlightUi02: #f6f6f9;
+  --highlightUiAccent01: #e5f5de;
+  --highlightUiAccent02: #e1edff;
+  --highlightUiAccent03: #ffe7f0;
+  --highlightUiSupport01: #fbe9e5;
+
+  --productiveHeading01Size: 28px;
+  --productiveHeading01Weight: 400;
+  --productiveHeading01Height: 40px;
+  --productiveHeading01Spacing: 0;
+  --productiveHeading02Size: 20px;
+  --productiveHeading02Weight: 400;
+  --productiveHeading02Height: 24px;
+  --productiveHeading02Spacing: 0;
+  --heading03Size: 16px;
+  --heading03Weight: 600;
+  --heading03Height: 24px;
+  --heading03Spacing: 0;
+  --heading04Size: 14px;
+  --heading04Weight: 500;
+  --heading04Height: 16px;
+  --heading04Spacing: 0.08px;
+
+  --bodySmall01Size: 12px;
+  --bodySmall01Weight: 400;
+  --bodySmall01Height: 16px;
+  --bodySmall01Spacing: 0.32px;
+  --bodyShort01Size: 14px;
+  --bodyShort01Weight: 400;
+  --bodyShort01Height: 24px;
+  --bodyShort01Spacing: 0.16px;
+  --bodyLong01Size: 14px;
+  --bodyLong01Weight: 400;
+  --bodyLong01Height: 22px;
+  --bodyLong01Spacing: 0.16px;
+
+  --label01Size: 14px;
+  --label01Weight: 600;
+  --label01Height: 24px;
+  --label01Spacing: 0.08px;
+  --caption01Size: 12px;
+  --caption01Weight: 400;
+  --caption01Height: 16px;
+  --caption01Spacing: 0.32px;
+
+  --spacer8: 8px;
+  --spacer16: 16px;
+  --spacer24: 24px;
+  --spacer32: 32px;
+  --spacer40: 40px;
+  --spacer48: 48px;
+  --spacer56: 56px;
+  --spacer64: 64px;
+  --spacer72: 72px;
+  --spacer80: 80px;
+  --spacer88: 88px;
+  --spacer96: 96px;
+
+  --borderRadiusSmall: 2px;
+  --borderRadiusRegular: 4px;
+  --borderRadiusCircle: 10000px;
+
+  --tempBlue: var(--interactive01);
+  --tempLightBlue: var(--highlightUi01);
+  --tempWhite: #fff;
+
+  --iconSmallSize: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'IBM Plex Sans', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.app__content {
+  position: absolute;
+  top: 72px;
+  right: 0;
+  bottom: 0;
+  left: 96px;
+  overflow-y: auto;
+  max-height: calc(100vh - 72px);
+}

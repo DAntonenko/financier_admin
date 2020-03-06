@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon-toggle-checkbox-checked-disabled-20</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon-toggle-checkbox-checked-disabled-20" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="icon-color" fill="#FEDE95" x="2" y="2" width="16" height="16" rx="2"></rect>
+        <g id="icon-toggle-checkbox-checked-item-20" transform="translate(5.000000, 6.000000)" fill="#BDBFC3">
+            <polygon id="icon-color" points="3.75 7.4375 0.625 4.3375 1.61875 3.35625 3.75 5.46875 8.38125 0.875 9.375 1.8625"></polygon>
+        </g>
+    </g>
+</svg>

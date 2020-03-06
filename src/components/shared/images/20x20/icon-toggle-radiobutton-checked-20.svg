@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon-toggle-radio button-checked-20</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icon-toggle-radio-button-checked-20" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,1 C5.02943725,1 1,5.02943725 1,10 C1,14.9705627 5.02943725,19 10,19 C14.9705627,19 19,14.9705627 19,10 C19,7.61305159 18.0517884,5.32386638 16.363961,3.63603897 C14.6761336,1.94821156 12.3869484,1 10,1 Z" id="icon-color" fill="#FEBD2B"></path>
+        <g id="icon-toggle-radio-button-selected-item-20" transform="translate(7.000000, 7.000000)" fill="#252B39">
+            <circle id="icon-color" cx="3" cy="3" r="3"></circle>
+        </g>
+    </g>
+</svg>

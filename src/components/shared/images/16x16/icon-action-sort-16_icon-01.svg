@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon-action-sort-16_icon-01</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.295,10.295 L11.5,12.085 L11.5,2 L10.5,2 L10.5,12.085 L8.705,10.295 L8,11 L11,14 L14,11 L13.295,10.295 L13.295,10.295 Z M5,2 L2,5 L2.705,5.705 L4.5,3.915 L4.5,14 L5.5,14 L5.5,3.915 L7.295,5.705 L8,5 L5,2 L5,2 Z" id="path-1"></path>
+    </defs>
+    <g id="icon-action-sort-16_icon-01" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="icon-color" fill="#252B39" xlink:href="#path-1"></use>
+    </g>
+</svg>

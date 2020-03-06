@@ -1,0 +1,52 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox__control {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+}
+
+.checkbox__control--checked {
+  background-image: url("../../shared/images/20x20/icon-toggle-checkbox-checked-20.svg");
+}
+
+.checkbox__control--unchecked {
+  background-image: url("../../shared/images/20x20/icon-toggle-checkbox-unchecked-20.svg");
+}
+
+.checkbox__control--indeterminate {
+  background-image: url("../../shared/images/20x20/icon-toggle-checkbox-tristate-20.svg");
+}
+
+.checkbox--disabled {
+  cursor: not-allowed;
+}
+
+.checkbox--disabled .checkbox__control--checked {
+  background-image: url("../../shared/images/20x20/icon-toggle-checkbox-checked-disabled-20.svg");
+}
+
+.checkbox--disabled .checkbox__control--unchecked {
+  background-image: url("../../shared/images/20x20/icon-toggle-checkbox-unchecked-disabled-20.svg");
+}
+
+.checkbox--disabled .checkbox__control--indeterminate {
+  background-image: url("../../shared/images/20x20/icon-toggle-checkbox-tristate-disabled-20.svg");
+}
+
+.checkbox__label {
+  margin-left: 8px;
+  color: var(--text01);
+  font-weight: var(--bodyShort01Weight);
+  font-size: var(--bodyShort01Size);
+  line-height: var(--bodyShort01Height);
+  letter-spacing: var(--bodyShort01Spacing);
+}
+
+.checkbox--disabled .checkbox__label {
+  color: var(--text04);
+}
