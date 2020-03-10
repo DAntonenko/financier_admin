@@ -1,0 +1,45 @@
+.admin-panel__header {
+  display: flex;
+  background-color: var(--uiMainNav01);
+}
+
+.admin-panel__symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 40px;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--iconInteractive01);
+  /* border-right: 1px solid var(--iconInteractive01); */
+}
+
+.admin-panel__main-navigation {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  color: var(--text04);
+}
+
+.admin-panel__main-navigation-tab {
+  height: 100%;
+  padding: 11px 32px 0 32px;
+  border-left: 1px solid var(--ui05);
+  cursor: pointer;
+}
+
+.admin-panel__main-navigation-tab:last-child {
+  border-right: 1px solid var(--ui05);
+}
+
+.admin-panel__main-navigation-tab:hover {
+  color: var(--text05);
+  background-color: var(--uiMainNav04);
+}
+
+.admin-panel__main-navigation-tab--active {
+  color: var(--text05);
+  background-color: var(--uiMainNav04);
+  border-bottom: 2px solid var(--interactive01);
+}
