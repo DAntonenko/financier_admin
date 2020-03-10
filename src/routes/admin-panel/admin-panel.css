@@ -12,7 +12,6 @@
   font-size: 28px;
   font-weight: 600;
   color: var(--iconInteractive01);
-  /* border-right: 1px solid var(--iconInteractive01); */
 }
 
 .admin-panel__main-navigation {
@@ -41,5 +40,5 @@
 .admin-panel__main-navigation-tab--active {
   color: var(--text05);
   background-color: var(--uiMainNav04);
-  border-bottom: 2px solid var(--interactive01);
+  /* border-bottom: 2px solid var(--interactive01); */
 }
