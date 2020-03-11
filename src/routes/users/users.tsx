@@ -2,7 +2,8 @@ import * as React from 'react';
 import './users.css';
 import { SimpleLoader } from '../../components/simple-loader/simple-loader';
 import { Button } from '../../components/controls/button/button';
-import { EllipsisTooltip } from '../../components/ellipsis-tooltip/ellipsis-tooltip';
+import { User } from './user/user';
+import { Checkbox } from '../../components/controls/checkbox/checkbox';
 
 export class Users extends React.Component {
 
@@ -18,6 +19,11 @@ export class Users extends React.Component {
         <table className='users__table'>
           <thead>
             <tr>
+              <th className='users_checkbox-container'>
+                <Checkbox
+                  state={true}
+                />
+              </th>
               <th>Имя</th>
               <th>Фамилия</th>
               <th>e-mail</th>
@@ -26,33 +32,36 @@ export class Users extends React.Component {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <EllipsisTooltip>
-                  Юлий
-                </EllipsisTooltip>
-              </td>
-              <td>
-                <EllipsisTooltip>
-                  Цезарь
-                </EllipsisTooltip>
-              </td>
-              <td>
-                <EllipsisTooltip>
-                  caesar@spqr.gov
-                </EllipsisTooltip>
-              </td>
-              <td>
-                <EllipsisTooltip>
-                  Сотрудник отдела продаж
-                </EllipsisTooltip>
-              </td>
-              <td>
-                <EllipsisTooltip>
-                  morituri te salutant!
-                </EllipsisTooltip>
-              </td>
-            </tr>
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
+            <User />
           </tbody>
         </table>
       </section>

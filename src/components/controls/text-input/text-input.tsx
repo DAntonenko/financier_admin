@@ -1,16 +1,9 @@
 import * as React from 'react';
 import { mergeClassNames } from '../../../utils/merge-class-names/merge-class-names';
-
-// import { ITooltipProps, Tooltip } from '../tooltip/tooltip';
 import './text-input.css';
-
-// interface ITextInputTooltipProps extends ITooltipProps {
-//   text: string | React.ReactNode;
-// }
 
 export interface ITextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
-  // tooltip?: ITextInputTooltipProps;
   cancelable?: boolean;
   isError?: boolean;
   error?: string;
@@ -25,7 +18,6 @@ export class TextInput extends React.Component<ITextInputProps> {
   public render()  {
     const {
       label,
-      // tooltip,
       cancelable,
       isError,
       error,
@@ -47,15 +39,6 @@ export class TextInput extends React.Component<ITextInputProps> {
           label !== undefined &&
           <div className='text-input__label'>
             <span>{label}</span>
-            {/* {
-              tooltip &&
-              <Tooltip
-                {...tooltip}
-                className={textInputStyles['text-input__label-tooltip']}
-              >
-                {tooltip.text}
-              </Tooltip>
-            } */}
           </div>
         }
         <input

@@ -1,6 +1,13 @@
+.admin-panel {
+  color: var(--text01);
+}
+
 .admin-panel__header {
   display: flex;
+  position: sticky;
+  top: 0;
   background-color: var(--uiMainNav01);
+  z-index: 20;
 }
 
 .admin-panel__symbol {
@@ -40,5 +47,4 @@
 .admin-panel__main-navigation-tab--active {
   color: var(--text05);
   background-color: var(--uiMainNav04);
-  /* border-bottom: 2px solid var(--interactive01); */
 }
