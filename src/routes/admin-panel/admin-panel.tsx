@@ -1,8 +1,9 @@
 import * as React from 'react';
 import './admin-panel.css';
 import { Button } from '../../components/controls/button/button';
-import { mergeClassNames } from '../../utils/merge-class-names/merge-class-names';
-import { Users } from '../users/users';
+import { mergeClassNames } from '../../utils/merge-class-names';
+import { LegalEntitiesTable } from '../legal-entities-table/legal-entities-table';
+import { UsersTable } from '../users-table/users-table';
 
 export enum EVisibleTab {
   USERS = 0,
@@ -59,9 +60,9 @@ export class AdminPanel extends React.Component<{}, IAdminPanelState> {
           </nav>
         </header>
         <main className='admin-panel__main-content'>
-          {this.state.visibleTab === EVisibleTab.USERS && <Users />}
+          {this.state.visibleTab === EVisibleTab.USERS && <UsersTable />}
           {this.state.visibleTab === EVisibleTab.ACCOUNTS_MONITORING && <p>МОНЯ</p>}
-          {this.state.visibleTab === EVisibleTab.LEGAL_ENTITIES_LIST && <p>ЛЫЦЫ</p>}
+          {this.state.visibleTab === EVisibleTab.LEGAL_ENTITIES_LIST && <p><LegalEntitiesTable /></p>}
         </main>
       </div>
     );

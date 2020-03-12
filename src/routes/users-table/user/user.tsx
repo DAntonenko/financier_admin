@@ -3,20 +3,21 @@ import './user.css';
 import { EllipsisTooltip } from '../../../components/ellipsis-tooltip/ellipsis-tooltip';
 import { Checkbox } from '../../../components/controls/checkbox/checkbox';
 import { TextInput } from '../../../components/controls/text-input/text-input';
+import { TextField } from '../../../components/controls/text-field/text-field';
 
 export class User extends React.Component {
 
   public render() {
     return (
       <tr>
-        <td className='user_checkbox-container'>
+        <td className='user__checkbox-container'>
           <Checkbox
             state={true}
           />
         </td>
         <td>
-          <TextInput
-            value='Юлий'
+          <TextField
+            content='Юлий'
           />
         </td>
         <td>

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './simple-loader.css';
-import { mergeClassNames } from '../../utils/merge-class-names/merge-class-names';
+import { mergeClassNames } from '../../utils/merge-class-names';
 
 interface ISimpleLoaderProps {
   caption?: string;

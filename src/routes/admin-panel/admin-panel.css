@@ -4,7 +4,8 @@
 
 .admin-panel__header {
   display: flex;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   background-color: var(--uiMainNav01);
   z-index: 20;
@@ -47,4 +48,8 @@
 .admin-panel__main-navigation-tab--active {
   color: var(--text05);
   background-color: var(--uiMainNav04);
+}
+
+.admin-panel__main-content {
+  overflow: auto;
 }

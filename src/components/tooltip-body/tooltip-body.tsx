@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { createRef, RefObject } from 'react';
-import { mergeClassNames } from '../../utils/merge-class-names/merge-class-names';
+import { mergeClassNames } from '../../utils/merge-class-names';
 import './tooltip-body.css';
 
 export enum EVerticalTooltipBodyPosition {

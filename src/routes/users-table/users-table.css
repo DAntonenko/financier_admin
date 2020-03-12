@@ -1,6 +1,6 @@
-.users__table {
+.users-table__table {
   display: grid;
-  grid-template-columns: 56px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 52px 128px 200px 256px 232px  232px;
   grid-template-rows: auto;
 }
 
@@ -19,6 +19,8 @@ tr:hover > td {
  }
 
 th {
+  display: flex;
+  align-items: center;
   position: sticky;
   top: 40px;
   text-align: left;
@@ -28,7 +30,7 @@ th {
   z-index: 10;
 }
 
-.users_checkbox-container {
+.users-table__checkbox-container {
   display: flex;
   justify-content: space-around;
   align-items: center;

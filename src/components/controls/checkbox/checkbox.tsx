@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { mergeClassNames } from '../../../utils/merge-class-names/merge-class-names';
+import { mergeClassNames } from '../../../utils/merge-class-names';
 import {EllipsisTooltip} from '../../ellipsis-tooltip/ellipsis-tooltip';
 import './checkbox.css';
 

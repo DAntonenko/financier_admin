@@ -1,0 +1,37 @@
+.legal-entities-table__table {
+  display: grid;
+  grid-template-columns: 52px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+thead,
+tr,
+tbody {
+  display: contents;
+}
+
+tr:nth-child(even) > td {
+ background-color: var(--uiBackgroundGrey);
+}
+
+tr:hover > td {
+  background-color: var(--ui01);
+ }
+
+th {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 40px;
+  text-align: left;
+  padding: 8px 16px;
+  background-color: var(--datavizAccent01Add01);
+  border-top: 16px solid var(--uiBackgroundWhite);
+  z-index: 10;
+}
+
+.legal-entities-table__checkbox-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
