@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { mergeClassNames } from '../../../utils/merge-class-names';
 import { TextInput } from '../text-input/text-input';
+import './text-field.css';
 
 export enum ETextFieldContentType {
   TEXT = 0,
@@ -26,6 +27,8 @@ export class TextField extends React.Component<ITextFieldProps, ITextFieldState>
     isFocused: false,
   }
 
+  public textInputRef: TextInput | undefined;
+
   public render()  {
     const {
       content,
@@ -38,16 +41,18 @@ export class TextField extends React.Component<ITextFieldProps, ITextFieldState>
     } = this.state;
 
     return (
-      <div
-        className='text-field'
-      >
+      <div className='text-field'>
         {
           isFocused ?
           <TextInput
             value={content}
             onBlur={this.turnEditModeOff}
+            ref={ this.setTextInputRef }
           /> :
-          <p onClick={this.turnEditModeOn}>
+          <p
+            className='text-field__content-output'
+            onClick={this.turnEditModeOn}
+          >
             {content}
           </p>
         }
@@ -58,6 +63,10 @@ export class TextField extends React.Component<ITextFieldProps, ITextFieldState>
   private turnEditModeOn = () => {
     this.setState({
       isFocused: true,
+    }, () => {
+      if (this.textInputRef && this.textInputRef.inputRef) {
+        this.textInputRef.inputRef.focus();
+      }
     });
   }
 
@@ -65,6 +74,10 @@ export class TextField extends React.Component<ITextFieldProps, ITextFieldState>
     this.setState({
       isFocused: false,
     });
+  }
+
+  private readonly setTextInputRef = (node: TextInput): void => {
+    this.textInputRef = node;
   }
 }
 
