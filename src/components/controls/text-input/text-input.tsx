@@ -92,7 +92,6 @@ export class TextInput extends React.Component<ITextInputProps> {
     const {
       onChange,
     } = this.props;
-    // this.inputRef.value = '';
     const event = new Event('change');
     if (onChange) {
       onChange({

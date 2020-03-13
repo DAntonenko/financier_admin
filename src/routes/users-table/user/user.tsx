@@ -1,9 +1,8 @@
 import * as React from 'react';
 import './user.css';
-import { EllipsisTooltip } from '../../../components/ellipsis-tooltip/ellipsis-tooltip';
 import { Checkbox } from '../../../components/controls/checkbox/checkbox';
 import { TextInput } from '../../../components/controls/text-input/text-input';
-import { TextField } from '../../../components/controls/text-field/text-field';
+import { EditableText } from '../../../components/controls/editable-text/editable-text';
 
 export class User extends React.Component {
 
@@ -16,7 +15,7 @@ export class User extends React.Component {
           />
         </td>
         <td>
-          <TextField
+          <EditableText
             content='Юлий'
           />
         </td>

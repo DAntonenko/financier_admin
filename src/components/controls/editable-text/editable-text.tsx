@@ -1,30 +1,32 @@
 import * as React from 'react';
 import { mergeClassNames } from '../../../utils/merge-class-names';
 import { TextInput } from '../text-input/text-input';
-import './text-field.css';
+import './editable-text.css';
 
-export enum ETextFieldContentType {
+export enum EEditableTextContentType {
   TEXT = 0,
   NUMBER = 1,
   PASSWORD = 2,
 }
 
-export interface ITextFieldProps extends React.Component {
+export interface IEditableTextProps extends React.Component {
   content: string;
-  contentType?: ETextFieldContentType;
+  contentType?: EEditableTextContentType;
 }
 
-export interface ITextFieldState {
+export interface IEditableTextState {
   isFocused: boolean;
+  editedContent: string;
 }
 
-export class TextField extends React.Component<ITextFieldProps, ITextFieldState> {
+export class EditableText extends React.Component<IEditableTextProps, IEditableTextState> {
   public static defaultProps = {
-    contentType: ETextFieldContentType.TEXT
+    contentType: EEditableTextContentType.TEXT
   };
 
-  public state: ITextFieldState = {
+  public state: IEditableTextState = {
     isFocused: false,
+    editedContent: '',
   }
 
   public textInputRef: TextInput | undefined;
@@ -41,16 +43,17 @@ export class TextField extends React.Component<ITextFieldProps, ITextFieldState>
     } = this.state;
 
     return (
-      <div className='text-field'>
+      <div className='editable-text'>
         {
           isFocused ?
           <TextInput
-            value={content}
+            value={this.state.editedContent ? this.state.editedContent : content}
             onBlur={this.turnEditModeOff}
             ref={ this.setTextInputRef }
+            onChange={this.onInputChange}
           /> :
           <p
-            className='text-field__content-output'
+            className='editable-text__content-output'
             onClick={this.turnEditModeOn}
           >
             {content}
@@ -76,8 +79,13 @@ export class TextField extends React.Component<ITextFieldProps, ITextFieldState>
     });
   }
 
+  private onInputChange = () => {
+    this.setState({
+      editedContent: this.textInputRef.inputRef.value,
+    })
+  }
+
   private readonly setTextInputRef = (node: TextInput): void => {
     this.textInputRef = node;
   }
 }
-
