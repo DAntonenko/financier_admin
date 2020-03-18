@@ -2,6 +2,7 @@ import * as React from 'react';
 import { mergeClassNames } from '../../../utils/merge-class-names';
 import { TextInput } from '../text-input/text-input';
 import './editable-text.css';
+import { EllipsisTooltip } from '../../ellipsis-tooltip/ellipsis-tooltip';
 
 export enum EEditableTextContentType {
   TEXT = 0,
@@ -11,7 +12,8 @@ export enum EEditableTextContentType {
 
 export interface IEditableTextProps extends React.Component {
   content: string;
-  contentType?: EEditableTextContentType;
+  // onChange: void;
+  contentType?: EEditableTextContentType; 
 }
 
 export interface IEditableTextState {
@@ -26,7 +28,7 @@ export class EditableText extends React.Component<IEditableTextProps, IEditableT
 
   public state: IEditableTextState = {
     isFocused: false,
-    editedContent: '',
+    editedContent: this.props.content,
   }
 
   public textInputRef: TextInput | undefined;
@@ -40,6 +42,7 @@ export class EditableText extends React.Component<IEditableTextProps, IEditableT
 
     const {
       isFocused,
+      editedContent,
     } = this.state;
 
     return (
@@ -47,21 +50,54 @@ export class EditableText extends React.Component<IEditableTextProps, IEditableT
         {
           isFocused ?
           <TextInput
-            value={this.state.editedContent ? this.state.editedContent : content}
-            onBlur={this.turnEditModeOff}
+            value={editedContent}
             ref={ this.setTextInputRef }
             onChange={this.onInputChange}
-          /> :
+            onBlur={this.turnEditModeOff}
+            onKeyDownCapture={this.onEnterPress}
+          />
+          :
           <p
             className='editable-text__content-output'
             onClick={this.turnEditModeOn}
           >
-            {content}
+            <EllipsisTooltip>
+              {
+                contentType === EEditableTextContentType.PASSWORD ?
+                content.replace(/./g, '\u00b7') :
+                content
+              }
+            </EllipsisTooltip>
           </p>
         }
       </div>
     );
   }
+
+  // private setInputType = (contentType: EEditableTextContentType) => {
+  //   switch (contentType) {
+  //     case EEditableTextContentType.TEXT:
+  //       return (
+  //         <TextInput
+  //           value={this.state.editedContent}
+  //           ref={ this.setTextInputRef }
+  //           onChange={this.onInputChange}
+  //           onBlur={this.turnEditModeOff}
+  //           onKeyDownCapture={this.onEnterPress}
+  //         />
+  //       );
+  //     case EEditableTextContentType.NUMBER:
+  //       return (
+  //         <NumberInput
+  //           value={this.state.editedContent}
+  //           ref={ this.setTextInputRef }
+  //           onChange={this.onInputChange}
+  //           onBlur={this.turnEditModeOff}
+  //           onKeyDownCapture={this.onEnterPress}
+  //         />
+  //       );
+  //    }
+  //  }
 
   private turnEditModeOn = () => {
     this.setState({
@@ -83,6 +119,15 @@ export class EditableText extends React.Component<IEditableTextProps, IEditableT
     this.setState({
       editedContent: this.textInputRef.inputRef.value,
     })
+  }
+
+  private onEnterPress = (event) => {
+    if (event.key === 'Enter') {
+      if (this.state.editedContent !== '') {
+          console.log(this.state.editedContent);
+        };
+      this.turnEditModeOff();
+    }
   }
 
   private readonly setTextInputRef = (node: TextInput): void => {

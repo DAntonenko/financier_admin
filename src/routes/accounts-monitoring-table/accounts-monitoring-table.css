@@ -1,0 +1,12 @@
+.accounts-monitoring-table__table {
+  display: grid;
+  grid-template-columns: 104px 232px 216px 128px 128px 120px 160px 160px 120px 96px 120px 148px 128px 120px 160px 136px 136px 136px 160px 120px 192px 192px 160px 160px 160px 160px;
+  grid-template-rows: auto;
+  width: fit-content;
+}
+
+th:nth-child(2) {
+  position: sticky;
+  left: 0;
+  z-index: 100;
+}

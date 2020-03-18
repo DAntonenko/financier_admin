@@ -1,10 +1,19 @@
 import * as React from 'react';
 import './user.css';
 import { Checkbox } from '../../../components/controls/checkbox/checkbox';
-import { TextInput } from '../../../components/controls/text-input/text-input';
-import { EditableText } from '../../../components/controls/editable-text/editable-text';
+import { EditableText, EEditableTextContentType } from '../../../components/controls/editable-text/editable-text';
 
-export class User extends React.Component {
+export interface IUserState {
+  editableTextContent: string;
+}
+
+export class User extends React.Component<{}, IUserState> {
+
+  // public onEditableTextChange = () => {
+  //   this.setState({
+  //     editableTextContent: this.state.editedContent;
+  //   })
+  // }
 
   public render() {
     return (
@@ -17,26 +26,28 @@ export class User extends React.Component {
         <td>
           <EditableText
             content='Юлий'
+            // onChange={this.onEditableTextChange}
           />
         </td>
         <td>
-          <TextInput
-            value='Цезарь'
+          <EditableText
+            content='Цезарь'
           />
         </td>
         <td>
-          <TextInput
-            value='caesar@spqr.gov'
+          <EditableText
+            content='caesar@spqr.gov'
           />
         </td>
         <td>
-          <TextInput
-            value='Сотрудник отдела продаж'
+          <EditableText
+            content='Сотрудник отдела продаж'
           />
         </td>
         <td>
-          <TextInput
-            value='morituri te salutant!'
+          <EditableText
+            contentType={EEditableTextContentType.PASSWORD}
+            content='morituri te salutant!'
           />
         </td>
       </tr>

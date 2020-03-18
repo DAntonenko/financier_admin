@@ -1,33 +1,8 @@
 .users-table__table {
   display: grid;
-  grid-template-columns: 52px 128px 200px 256px 232px  232px;
+  grid-template-columns: 54px 160px 216px 256px 256px 256px;
   grid-template-rows: auto;
-}
-
-thead,
-tr,
-tbody {
-  display: contents;
-}
-
-tr:nth-child(even) > td {
- background-color: var(--uiBackgroundGrey);
-}
-
-tr:hover > td {
-  background-color: var(--ui01);
- }
-
-th {
-  display: flex;
-  align-items: center;
-  position: sticky;
-  top: 40px;
-  text-align: left;
-  padding: 8px 16px;
-  background-color: var(--datavizAccent01Add01);
-  border-top: 16px solid var(--uiBackgroundWhite);
-  z-index: 10;
+  width: fit-content;
 }
 
 .users-table__checkbox-container {

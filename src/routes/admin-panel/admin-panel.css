@@ -4,7 +4,6 @@
 
 .admin-panel__header {
   display: flex;
-  position: fixed;
   width: 100%;
   top: 0;
   background-color: var(--uiMainNav01);
@@ -51,5 +50,66 @@
 }
 
 .admin-panel__main-content {
+  position: relative;
+  /* width: fit-content; */
+  height: calc(100vh - 112px);
   overflow: auto;
+}
+
+thead,
+tr,
+tbody {
+  display: contents;
+}
+
+th {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  text-align: left;
+  padding: 8px 16px;
+  background-color: var(--datavizAccent01Add01);
+  border-top: 16px solid var(--uiBackgroundWhite);
+  z-index: 10;
+}
+
+th:not(:last-child) {
+  border-right: 1px solid var(--uiBackgroundWhite);
+}
+
+td {
+  background-color: var(--uiBackgroundWhite);
+}
+
+tr:nth-child(even) > td {
+ background-color: var(--uiBackgroundGrey);
+}
+
+tr:hover > td {
+  background-color: var(--ui01);
+}
+
+td:nth-child(2) {
+  position: sticky;
+  left: 0;
+  z-index: 10;
+  background-color: var(--uiBackgroundWhite);
+  border-right: 1px solid var(--ui01);
+}
+
+.admin-panel__footer {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  border-top: 1px solid var(--ui02);
+}
+
+.admin-panel__remove-users-button {
+  margin-left: 56px;
+  margin-right: 16px;
+}
+
+.admin-panel__add-user-button {
+  margin-right: 384px;
 }

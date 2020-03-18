@@ -175,19 +175,3 @@ ul {
   list-style: none;
 }
 
-.app {
-  width: 100vw;
-  height: 100vh;
-  padding: 20px;
-  overflow: hidden;
-}
-
-.app__content {
-  position: absolute;
-  top: 72px;
-  right: 0;
-  bottom: 0;
-  left: 96px;
-  overflow-y: auto;
-  max-height: calc(100vh - 72px);
-}

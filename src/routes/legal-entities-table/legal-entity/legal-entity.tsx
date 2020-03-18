@@ -1,9 +1,7 @@
 import * as React from 'react';
 import './legal-entity.css';
-import { EllipsisTooltip } from '../../../components/ellipsis-tooltip/ellipsis-tooltip';
 import { Checkbox } from '../../../components/controls/checkbox/checkbox';
-import { TextInput } from '../../../components/controls/text-input/text-input';
-import { NumberInput } from '../../../components/controls/number-input/number-input';
+import { EditableText } from '../../../components/controls/editable-text/editable-text';
 
 export class LegalEntity extends React.Component {
 
@@ -16,63 +14,63 @@ export class LegalEntity extends React.Component {
           />
         </td>
         <td>
-          <TextInput
-            value='ООО "Хуйня полная"'
+          <EditableText
+            content='ООО "Хуйня полная"'
           />
         </td>
         <td>
-          <TextInput
-            value='Курмангалиев Эрик Салимович'
+          <EditableText
+            content='Курмангалиев Эрик Салимович'
           />
         </td>
         <td>
-          <TextInput
-            value='народный артист Республики Казахстан'
+          <EditableText
+            content='народный артист Республики Казахстан'
           />
         </td>
         <td>
-          <NumberInput
-            value='123456'
+          <EditableText
+            content='123456789'
           />
         </td>
         <td>
-          <NumberInput
-            value='123456'
+          <EditableText
+            content='1234567890'
           />
         </td>
         <td>
-          <TextInput
-            value='Цыго-банк'
+          <EditableText
+            content='Цыго-банк'
           />
         </td>
         <td>
-          <NumberInput
-            value='123456'
+          <EditableText
+            content='123456'
           />
         </td>
         <td>
-          <TextInput
-            value='Ваганьковское кладбище'
+          <EditableText
+            content='Ваганьковское кладбище'
           />
         </td>
         <td>
-          <TextInput
-            value='Ваганьковское кладбище'
+          <EditableText
+            content='Ваганьковское кладбище'
           />
         </td>
         <td>
-          <NumberInput
-            value='123456'
+          <EditableText
+            content='123456'
           />
         </td>
         <td>
-          <NumberInput
-            value='123456'
+          <EditableText
+            content='123456789'
           />
         </td>
         <td>
-          <NumberInput
-            value='123456'
+          <EditableText
+            content='1234567890123'
           />
         </td>
       </tr>
