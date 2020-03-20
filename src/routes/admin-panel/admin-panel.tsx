@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './admin-panel.css';
-import { Button, EButtonAppearance } from '../../components/controls/button/button';
+import { Button, EButtonAppearance, EButtonIcon } from '../../components/controls/button/button';
 import { mergeClassNames } from '../../utils/merge-class-names';
 import { LegalEntitiesTable } from '../legal-entities-table/legal-entities-table';
 import { UsersTable } from '../users-table/users-table';
@@ -65,24 +65,6 @@ export class AdminPanel extends React.Component<{}, IAdminPanelState> {
           {this.state.visibleTab === EVisibleTab.ACCOUNTS_MONITORING && <AccountsMonitoringTable />}
           {this.state.visibleTab === EVisibleTab.LEGAL_ENTITIES_LIST && <LegalEntitiesTable />}
         </main>
-        <footer className='admin-panel__footer'>
-          <Button
-            className='admin-panel__remove-users-button'
-            appearance={EButtonAppearance.GHOST}
-            disabled={true}
-            text='Удалить выбранных пользователей'
-          />
-          <Button
-            className='admin-panel__add-user-button'
-            appearance={EButtonAppearance.LIGHT}
-            text='Добавить пользователя'
-          />
-          <Button
-            className='admin-panel__save-changes-button'
-            disabled={true}
-            text='Сохранить изменения'
-          />
-        </footer>
       </div>
     );
   }

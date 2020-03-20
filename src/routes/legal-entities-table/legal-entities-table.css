@@ -10,3 +10,30 @@
   justify-content: space-around;
   align-items: center;
 }
+
+.legal-entities-table__footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 1136px;
+  height: 72px;
+}
+
+.legal-entities-table__remove-entities-button {
+  margin-left: 56px;
+  margin-right: 16px;
+}
+
+.legal-entities-table__add-entity-button {
+  margin-right: 384px;
+}
+
+.legal-entities-table__save-changes-button {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.legal-entities-table__modal-cancel-button {
+  margin-right: 40px;
+}

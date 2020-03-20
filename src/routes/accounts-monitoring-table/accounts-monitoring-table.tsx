@@ -2,11 +2,24 @@ import * as React from 'react';
 import './accounts-monitoring-table.css';
 import { Account } from './account/account';
 import { SimpleLoader } from '../../components/simple-loader/simple-loader';
-import { Button } from '../../components/controls/button/button';
+import { Button, EButtonAppearance } from '../../components/controls/button/button';
+import { Modal } from '../../components/modal/modal';
 
-export class AccountsMonitoringTable extends React.Component {
+interface IAccountsMonitoringTableState {
+  isConfirmSaveChangesModalOpen: boolean;
+}
+
+export class AccountsMonitoringTable extends React.Component<{}, IAccountsMonitoringTableState> {
+
+  public state: IAccountsMonitoringTableState = {
+    isConfirmSaveChangesModalOpen: false,
+  }
 
   public render() {
+    const {
+      isConfirmSaveChangesModalOpen,
+    } = this.state;
+
     return (
       <section className='accounts-monitoring-table'>
         {
@@ -86,7 +99,36 @@ export class AccountsMonitoringTable extends React.Component {
             <Account />
           </tbody>
         </table>
+        <footer className='accounts-monitoring-table__footer'>
+          <Button
+            className='accounts-monitoring-table__save-changes-button'
+            // disabled={true}
+            text='Сохранить изменения'
+            onClick={this.onSaveChangesButtonClick}
+          />
+        </footer>
+        {
+          isConfirmSaveChangesModalOpen &&
+          <Modal
+            headerText='Сохранить изменения?'
+          >
+            <Button
+              className='accounts-monitoring-table__modal-cancel-button'
+              text='Отмена'
+              appearance={EButtonAppearance.GHOST}
+            />
+            <Button
+              text='Сохранить'
+            />
+          </Modal>
+        }
       </section>
     );
   }
+
+  private onSaveChangesButtonClick = () => {
+    this.setState({
+      isConfirmSaveChangesModalOpen: true,
+    })
+  };
 }
