@@ -156,6 +156,8 @@
   --tempWhite: #fff;
 
   --iconSmallSize: 16px;
+  --iconMediumSize: 20px;
+  --iconLargeSize: 24px;
 }
 
 * {

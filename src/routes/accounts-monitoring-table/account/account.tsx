@@ -1,18 +1,25 @@
 import * as React from 'react';
 import './account.css';
 import { EditableText } from '../../../components/controls/editable-text/editable-text';
+import { IconButton, EIconButtonIcon, EIconButtonSize } from '../../../components/controls/icon-button/icon-button';
 
 export class Account extends React.Component {
 
   public render() {
     return (
-      <tr>
-        <td className='account'>
+      <tr className='account'>
+        <td className='account__show-entities-button-container'>
+          <IconButton
+            icon={EIconButtonIcon.EXPAND}
+            size={EIconButtonSize.SMALL}
+          />
+        </td>
+        <td>
           <EditableText
             content='123456'
           />
         </td>
-        <td>
+        <td className='account__email-container'>
           <EditableText
             content='щито-нибудь'
           />

@@ -91,11 +91,3 @@ tr:nth-child(even) > td {
 tr:hover > td {
   background-color: var(--ui01);
 }
-
-td:nth-child(2) {
-  position: sticky;
-  left: 0;
-  z-index: 10;
-  background-color: var(--uiBackgroundWhite);
-  border-right: 1px solid var(--ui01);
-}

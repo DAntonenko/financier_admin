@@ -3,3 +3,17 @@
   padding: 8px 16px;
 }
 
+.account__show-entities-button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.account__email-container {
+  position: sticky;
+  left: 0;
+  z-index: 10;
+  background-color: var(--uiBackgroundWhite);
+  border-right: 1px solid var(--ui01);
+}
+

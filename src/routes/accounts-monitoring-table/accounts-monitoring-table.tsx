@@ -31,8 +31,9 @@ export class AccountsMonitoringTable extends React.Component<{}, IAccountsMonito
         <table className='accounts-monitoring-table__table'>
           <thead>
             <tr>
+              <th />
               <th>Номер аккаунта</th>
-              <th>E-mail</th>
+              <th className='accounts-monitoring-table__heading-email'>E-mail</th>
               <th>Юрлицо плательщика</th>
               <th>Тариф</th>
               <th>Платный или бесплатный</th>
